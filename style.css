@@ -1,9 +1,65 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
 }
 
 .comida-container {
-  /* Estilos para el contenedor de la lista */
+  background-color: rgba(56, 182, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.card {
+  height: 250px; /* Le damos un poco más de altura fija para que quepan bien las columnas */
+  width: 300px;  /* Un poco más de ancho para permitir varias columnas de ingredientes */
+  background-color: white;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden; 
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgba(255, 186, 42);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+
+.ingredien {
+  color: rgb(0, 0, 0);
+  width: 100%;
+  column-count: 2; 
+  column-gap: 15px; 
+  break-inside: avoid; 
+  margin-left: 20px;
+  margin: 10px;
+}
+
+.ingredien p, .ingredien li {
+  font-size: 13px;
+  margin-bottom: 4px;
 }
