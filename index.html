@@ -8,8 +8,31 @@
 </head>
 <body>
     <header>
-      <img src="images.png">
-      
+      <img class="imagen" src="images.png">
+      <div class="navegador">
+        <h2>Buscador:</h2>
+        <div class="busqueda"><input id="inputBusqueda" type="search" class="buscador" placeholder="Busca un plato">
+      </div>
+      <div class="div-filtros">
+        <h2>Filtros:</h2>
+        <select id="filtroTipo" class="filtros">
+          <option disabled selected>Tipo de comida</option>
+          <option>Frito</option>
+          <option>Parrilla</option>
+          <option>Horno</option>
+          <option>Guiso</option>
+        </select>
+        <select id="filtroLugar" class="filtros">
+          <option disabled selected>Lugar</option>
+          <option>Buenos Aires</option>
+          <option>Salta</option>
+          <option>Tucumán</option>
+          <option>Córdoba</option>
+          <option>Jujuy</option>
+          <option>Santa Fe</option>
+          <option>Entre Ríos</option>
+        </select>
+      </div>
     </header>
     <main class="comida-container" id="comidaContainer">
         <!-- Contenido Dinamico -->

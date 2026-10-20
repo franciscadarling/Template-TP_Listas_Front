@@ -39,3 +39,6 @@ function tarjeta () {
     tarjeta ()
     event.target.reset()
   })
+ const buscador = document.getElementById("inputBusqueda")
+ const filtroTipo = document.getElementById("filtroTipo");
+ const filtroProvincia = document.getElementById("filtroLugar");
